@@ -16,3 +16,7 @@ const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
   console.log(`Listening on ${PORT} 👀`);
 });
+
+server.use("*", (req, res) => {
+  res.send(<h1>Welcome To Niks First Project in Heroku</h1>);
+});
