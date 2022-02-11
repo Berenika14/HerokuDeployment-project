@@ -18,8 +18,5 @@ server.listen(PORT, () => {
 });
 
 server.use("*", (req, res) => {
-  res.send(
-    "<h1>Welcome To Niks First Project in Heroku</h1>",
-    "<h2> add /api/users after the link to get some random users</h2>"
-  );
+  res.send("<h1>Welcome To Niks First Project in Heroku</h1>");
 });
